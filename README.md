@@ -6,7 +6,7 @@ A minimal Docker image for the [Agate Gemini server](https://github.com/mbrubeck
 
 `$ docker build -t docker-agate:latest .`
 
-You can override the version of Agate with `--build-arg version=<tag>`.
+You can override the version of Agate with `--build-arg version=<branch or tag>`.
 
 ## Configuration
 

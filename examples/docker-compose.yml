@@ -1,0 +1,12 @@
+services:
+  gemini:
+    image: docker-agate:latest
+    ports:
+      - 1965:1965
+    volumes:
+      - ./gemini/:/var/gemini/:ro
+    environment:
+      - HOSTNAME=example.com
+      - ADDR_IPV4=0.0.0.0:1965
+      - CONTENT=/var/gemini
+      - LANG=en-US
